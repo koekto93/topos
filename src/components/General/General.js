@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
-import LangButton from "../_common/LangButton";
+import LangButton from "../../_common/LangButton";
 
 const General = () => (
   <Grid fluid>

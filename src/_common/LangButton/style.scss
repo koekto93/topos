@@ -1,20 +1,25 @@
+@import "../../css/global.scss";
+
 .c-lang-button {
-  //@include font-general(20px, 1.57, 0.91px, center);
+  @include font-general(14px, 1.57, 0.91px, center);
   width: 30px;
   height: 30px;
-  border-radius: 20px;
-  border-style: solid;
-  border-width: 2px;
-  border-image-source: linear-gradient(to right, #0ab4d3, #bf2c95);
-  border-image-slice: 1;
+  border: double 2px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(#001a34, #001a34),
+    radial-gradient(circle at top left, #0ab4d3, #bf2c95);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 
   @media (min-width: $breakpoint-tablet) {
+    @include font-general(16px, 1.57, 0.91px, center);
     width: 40px;
     height: 40px;
   }
 
-  /*  @media (min-width: $breakpoint-web) {
+  @media (min-width: $breakpoint-web) {
+    @include font-general(18px, 1.57, 0.91px, center);
     width: 60px;
     height: 40px;
-  } */
+  }
 }

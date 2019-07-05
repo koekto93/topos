@@ -1,7 +1,6 @@
 import React from "react";
 
-import General from "./components/General";
-import "./App.css";
+import General from "./General/General";
 
 function App() {
   return (
