@@ -1,0 +1,139 @@
+$text-color: #1b1e2d;
+$bold-text-color: #1a1a1a;
+$link-text-color: #e16a49;
+$white-text-color: #f7f7f7;
+$mailing-bg-color: #69268c;
+$mailing-text-color: #fad100;
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 760px;
+$breakpoint-web: 1280px;
+
+$image_dir: "../img/";
+
+body {
+  width: 1280px;
+  background-size: cover;
+  margin: 0 auto;
+  /*   display: flex;
+  flex-direction: column;
+  .content {
+    flex: 1 0 auto;
+  }
+  
+  footer {
+    flex: 0 0 auto;
+  } */
+  background: linear-gradient(to bottom, #001a34 0%, #000000);
+}
+
+.l-app-content {
+  background: url("images/uploads/pattern1.png") 100% 80px no-repeat,
+    url("images/uploads/pattern2.png") 100% 45% no-repeat;
+  height: 4000px;
+  z-index: 100;
+}
+
+.link-color {
+  color: $link-text-color;
+}
+
+%image-wrapper {
+  background-size: cover;
+  overflow: hidden;
+}
+
+@mixin svg-icon($width, $height, $name, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+  -webkit-mask-image: url($image_dir+$name+".svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  mask-image: url($image_dir+$name+".svg");
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+}
+
+@mixin set-link-color($color) {
+  & a {
+    text-decoration: none;
+  }
+  & a:link {
+    color: $color;
+  }
+  & a:visited {
+    color: $color;
+  }
+  & a:hover {
+    color: $color;
+  }
+  & a:active {
+    color: $color;
+  }
+}
+
+.display-flex {
+  display: flex;
+
+  &._row {
+    flex-direction: row;
+  }
+  &._column {
+    flex-direction: column;
+  }
+  &._row-wrap {
+    flex-flow: row wrap;
+  }
+  &._a-center {
+    align-items: center;
+  }
+  &._a-start {
+    align-items: flex-start;
+  }
+  &._a-end {
+    align-items: flex-end;
+  }
+  &._j-center {
+    justify-content: center;
+  }
+  &._j-between {
+    justify-content: space-between;
+  }
+  &._j-end {
+    justify-content: flex-end;
+  }
+}
+
+.icon {
+  /*   &._search {
+    @extend %search-icon;
+  } */
+}
+
+.c-button {
+  @include font-general(11px, normal, start, #1a1a1a, 0.1px);
+  border-radius: 6px;
+  border: 1px solid $link-text-color;
+  padding: 9px 0;
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+}
+
+.c-button:hover {
+  background-color: #e3775b;
+  color: $white-text-color;
+}
+
+h2 {
+  @include font-extra-bold(35px, 1.57, 0.91px, center);
+}
+
+h3 {
+  @include font-extra-bold(26px, 1.35, 0.68px);
+}
+
+h4 {
+  @include font-extra-bold(22px, 2, 0.57px, center);
+}

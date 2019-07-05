@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Avenir-Roman;
+  src: url(fonts/Avenir-Roman.ttf);
+}
+
+@font-face {
+  font-family: Geometria-Bold;
+  src: url(fonts/Geometria-Bold.ttf);
+}
+
+@font-face {
+  font-family: Geometria-ExtraBold;
+  src: url(fonts/Geometria-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url(fonts/Geometria.ttf);
+}
+
+@mixin font-general(
+  $size: 18px,
+  $lineHeight: normal,
+  $letterSpacing: normal,
+  $textAlign: start,
+  $color: #ffffff
+) {
+  font-family: Geometria;
+  font-size: $size;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  color: $color;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin font-extra-bold(
+  $size: 18px,
+  $lineHeight: normal,
+  $letterSpacing: normal,
+  $textAlign: start,
+  $color: #ffffff
+) {
+  font-family: Geometria-ExtraBold;
+  font-size: $size;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  color: $color;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin font-bold(
+  $size: 18px,
+  $lineHeight: normal,
+  $letterSpacing: normal,
+  $textAlign: start,
+  $color: #ffffff
+) {
+  font-family: Geometria-Bold;
+  font-size: $size;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  color: $color;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin font-input(
+  $size: 13px,
+  $lineHeight: normal,
+  $letterSpacing: normal,
+  $textAlign: start,
+  $color: #ffffff
+) {
+  font-family: Avenir-Roman;
+  font-size: $size;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  color: $color;
+  letter-spacing: $letterSpacing;
+}
