@@ -57,3 +57,18 @@
   color: $color;
   letter-spacing: $letterSpacing;
 }
+
+@mixin font-medium(
+  $size: 13px,
+  $lineHeight: normal,
+  $letterSpacing: normal,
+  $textAlign: start,
+  $color: #ffffff
+) {
+  font-family: Geometria-Medium;
+  font-size: $size;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  color: $color;
+  letter-spacing: $letterSpacing;
+}

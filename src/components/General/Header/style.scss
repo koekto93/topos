@@ -1,0 +1,51 @@
+@import '../../../css/global.scss';
+
+.l-header {
+  margin-top: 64px;
+  &__logo {
+    background: url('../../../images/uploads/topos.png') no-repeat;
+    background-size: contain;
+    width: 190px;
+    height: 35px;
+  }
+
+  &__subscription {
+    @include font-medium(10px, 1.6, 0.89px, center);
+    margin-top: 12px;
+  }
+
+  &__description {
+    @include font-general(20px, 1.65, 0.7px, center);
+    margin-top: 50px;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-top: 260px;
+    &__logo {
+      width: 262px;
+      height: 49px;
+    }
+    &__subscription {
+      @include font-medium(12px, 2.08, 1.06px, center);
+    }
+    &__description {
+      @include font-general(30px, 1.83, 1.05px, center);
+      margin-top: 90px;
+    }
+  }
+
+  @media (min-width: $breakpoint-web) {
+    margin-top: 260px;
+    &__logo {
+      width: 350px;
+      height: 65px;
+    }
+    &__subscription {
+      @include font-medium(13px, 1.92, 1.15px, center);
+    }
+    &__description {
+      @include font-general(45px, 1.42, 1.57px, center);
+      margin-top: 120px;
+    }
+  }
+}

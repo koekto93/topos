@@ -1,14 +1,21 @@
-import React from "react";
+import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
-import General from "./General/General";
-import SVGIcon from "../_common/SVGIcon";
+import General from './General';
+import SVGIcon from '../_common/SVGIcon';
+import './App.scss';
 
 function App() {
   return (
-    <div className="l-app-content">
-      <General />
-      <SVGIcon name="locate" />
-    </div>
+    <Grid className="wrap">
+      <Row>
+        <Col xs={12}>
+          <div className="l-app-content">
+            <General />
+          </div>
+        </Col>
+      </Row>
+    </Grid>
   );
 }
 
