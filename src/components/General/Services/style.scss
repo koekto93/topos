@@ -1,10 +1,11 @@
-@import "../../../css/global.scss";
+@import '../../../css/global.scss';
 
 .l-services {
   &__category {
     @include font-general(14px, 1.36, 0.36px);
     height: 30px;
     padding: 0;
+    cursor: pointer;
     /*  &._active {
       @include font-bold(14px, 2.07, 0.36px);
     } */
@@ -16,41 +17,58 @@
   }
 
   &__description {
-    @include font-general(18px, 1.83, 0.63px);
+    @include font-general(11px, 1.55, 0.38px);
 
     &._mobile {
       margin-top: 10px;
+      padding-bottom: 10px;
     }
     &._big {
       display: none;
     }
   }
 
-  //list
-  & ul {
-    //margin: 30px;
-    position: relative;
-  }
-
-  & li {
-    list-style-type: none;
-    //width: 150px;
+  &__point {
     min-height: 70px;
     word-wrap: break-word;
     border-left: 2px solid #825aa9;
     padding-left: 30px;
-    //padding-bottom: 10px;
-    cursor: pointer;
+    position: relative;
+
+    &:last-child {
+      border: none;
+    }
   }
-  & li:before {
-    content: "";
+
+  &__list-style {
     position: absolute;
-    margin-left: -14px;
+    margin-left: -16px;
     background: #825aa9;
     border-radius: 15px;
     border: 3px solid #825aa9;
     padding: 12px;
     left: 0;
+  }
+
+  &__horizon-line {
+    width: 70px;
+    border-top: 2px dashed #825aa9;
+  }
+
+  &__horizon-point-wrapper {
+    position: absolute;
+    top: 0;
+    left: 500px;
+  }
+
+  &__horizon-point {
+    position: relative;
+    width: 400px;
+
+    .l-services__list-style {
+      position: initial;
+      margin: 0 10px;
+    }
   }
 
   @media (min-width: $breakpoint-tablet) {
@@ -91,5 +109,11 @@
         display: block;
       }
     }
+  }
+}
+
+.l-double-points {
+  &__points-wrapper {
+    position: relative;
   }
 }
