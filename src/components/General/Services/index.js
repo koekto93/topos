@@ -206,7 +206,9 @@ const Services = () => {
           </Col>
           <Col xs={6}>
             <div className="l-services__description _big">
-              <span>{selectedPoint ? allDescriptions[selectedPoint] : ""}</span>
+              <span>
+                {selectedPoint ? allDescriptions[selectedPoint][lang] : ""}
+              </span>
             </div>
           </Col>
           <Col xs={12}>
