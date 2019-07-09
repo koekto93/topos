@@ -1,4 +1,4 @@
-@import '../../../css/global.scss';
+@import "../../../css/global.scss";
 
 .l-services {
   &__category {
@@ -6,13 +6,15 @@
     height: 30px;
     padding: 0;
     cursor: pointer;
+    display: flex;
+    align-items: flex-start;
     /*  &._active {
       @include font-bold(14px, 2.07, 0.36px);
     } */
 
     &:hover,
     ._active {
-      @include font-bold(14px, 2.07, 0.36px);
+      @include font-bold(14px, 1.36, 0.36px);
     }
   }
 
@@ -29,51 +31,40 @@
   }
 
   &__point {
-    min-height: 70px;
+    min-height: 50px;
     word-wrap: break-word;
     border-left: 2px solid #825aa9;
-    padding-left: 30px;
+    padding-left: 18px;
     position: relative;
 
-    &:last-child {
+    &._dashed {
+      border-left: 2px dashed #825aa9;
+    }
+
+    &._no-border {
       border: none;
     }
   }
 
+  &__last-points-block > div:last-child {
+    border: none;
+    margin-left: 2px;
+  }
+
   &__list-style {
     position: absolute;
-    margin-left: -16px;
+    margin-left: -9px;
     background: #825aa9;
     border-radius: 15px;
     border: 3px solid #825aa9;
-    padding: 12px;
+    padding: 5px;
     left: 0;
-  }
-
-  &__horizon-line {
-    width: 70px;
-    border-top: 2px dashed #825aa9;
-  }
-
-  &__horizon-point-wrapper {
-    position: absolute;
-    top: 0;
-    left: 500px;
-  }
-
-  &__horizon-point {
-    position: relative;
-    width: 400px;
-
-    .l-services__list-style {
-      position: initial;
-      margin: 0 10px;
-    }
   }
 
   @media (min-width: $breakpoint-tablet) {
     &__category {
       @include font-general(18px, 2.11, 0.46px);
+      align-items: center;
 
       &:hover,
       ._active {
@@ -87,17 +78,29 @@
       }
       &._big {
         display: block;
+        @include font-general(18px, 1.83, 0.63px);
       }
+    }
+
+    &__point {
+      min-height: 70px;
+      padding-left: 30px;
+    }
+
+    &__list-style {
+      padding: 12px;
+      margin-left: -16px;
     }
   }
 
   @media (min-width: $breakpoint-web) {
     &__category {
       @include font-general(24px, 1.67, 0.61px);
+      align-items: center;
 
       &:hover,
       &._active {
-        @include font-bold(24px, normal, 1.71px);
+        @include font-bold(24px, 1.67, 0.61px);
       }
     }
 
@@ -107,13 +110,109 @@
       }
       &._big {
         display: block;
+        @include font-general(18px, 1.83, 0.63px);
       }
+    }
+
+    &__point {
+      min-height: 70px;
+      padding-left: 30px;
+    }
+
+    &__list-style {
+      padding: 12px;
+      margin-left: -16px;
     }
   }
 }
 
+//стили для 2-го пункта сервисов
 .l-double-points {
+  border-left: 2px dashed #825aa9;
+
   &__points-wrapper {
     position: relative;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .l-services__category {
+    max-width: 120px;
+  }
+
+  &__horizon-line {
+    width: 30px;
+    border-top: 2px dashed #825aa9;
+  }
+
+  &__horizon-point-wrapper {
+    //position: absolute;
+    //top: 0;
+    //left: 140px;
+  }
+
+  &__horizon-point {
+    position: relative;
+
+    .l-services__list-style {
+      position: initial;
+      margin: 0 10px;
+    }
+  }
+
+  &__no-gutter {
+    padding: 0;
+  }
+
+  &__description {
+    @include font-general(11px, 1.55, 0.38px);
+    margin-left: 10px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    .l-services__category {
+      max-width: 100%;
+    }
+
+    &__horizon-line {
+      width: 70px;
+    }
+
+    &__horizon-point-wrapper {
+      left: 500px;
+    }
+
+    &__horizon-point {
+      width: 400px;
+    }
+
+    &__description {
+      display: none;
+    }
+  }
+
+  @media (min-width: $breakpoint-web) {
+    .l-services__category {
+      max-width: 100%;
+    }
+
+    &__horizon-line {
+      width: 70px;
+    }
+
+    &__horizon-point-wrapper {
+      left: 500px;
+    }
+
+    &__horizon-point {
+      width: 400px;
+    }
+
+    &__description {
+      display: none;
+    }
   }
 }
