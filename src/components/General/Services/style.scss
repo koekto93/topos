@@ -1,6 +1,10 @@
-@import "../../../css/global.scss";
+@import '../../../css/global.scss';
 
 .l-services {
+  &__points-wrapper {
+    margin-top: 34px;
+  }
+
   &__category {
     @include font-general(14px, 1.36, 0.36px);
     height: 30px;
@@ -8,9 +12,6 @@
     cursor: pointer;
     display: flex;
     align-items: flex-start;
-    /*  &._active {
-      @include font-bold(14px, 2.07, 0.36px);
-    } */
 
     &:hover,
     ._active {
@@ -22,7 +23,7 @@
     @include font-general(11px, 1.55, 0.38px);
 
     &._mobile {
-      margin-top: 10px;
+      //margin-top: 10px;
       padding-bottom: 10px;
     }
     &._big {
@@ -34,7 +35,7 @@
     min-height: 50px;
     word-wrap: break-word;
     border-left: 2px solid #825aa9;
-    padding-left: 18px;
+    padding-left: 14px;
     position: relative;
 
     &._dashed {
@@ -57,11 +58,18 @@
     background: #825aa9;
     border-radius: 15px;
     border: 3px solid #825aa9;
-    padding: 5px;
+    padding: 4px;
     left: 0;
   }
 
+  &__button {
+    margin-top: 20px;
+  }
+
   @media (min-width: $breakpoint-tablet) {
+    &__points-wrapper {
+      margin-top: 60px;
+    }
     &__category {
       @include font-general(18px, 2.11, 0.46px);
       align-items: center;
@@ -91,9 +99,15 @@
       padding: 12px;
       margin-left: -16px;
     }
+    &__button {
+      margin-top: 40px;
+    }
   }
 
   @media (min-width: $breakpoint-web) {
+    &__points-wrapper {
+      margin-top: 95px;
+    }
     &__category {
       @include font-general(24px, 1.67, 0.61px);
       align-items: center;
@@ -123,23 +137,32 @@
       padding: 12px;
       margin-left: -16px;
     }
+
+    &__button {
+      margin-top: 65px;
+    }
   }
 }
 
 //стили для 2-го пункта сервисов
 .l-double-points {
   border-left: 2px dashed #825aa9;
+  min-height: 100px; //???
 
   &__points-wrapper {
     position: relative;
   }
 
-  .row {
+  & .row {
     margin: 0;
   }
 
-  .l-services__category {
+  & .l-services__category {
     max-width: 120px;
+  }
+
+  & .l-services__point {
+    min-height: 80px; //???
   }
 
   &__horizon-line {
@@ -156,7 +179,7 @@
   &__horizon-point {
     position: relative;
 
-    .l-services__list-style {
+    & .l-services__list-style {
       position: initial;
       margin: 0 10px;
     }
@@ -168,13 +191,18 @@
 
   &__description {
     @include font-general(11px, 1.55, 0.38px);
-    margin-left: 10px;
+    margin-left: 6px; //???
     margin-bottom: 12px;
+  }
+
+  &__without-right-padding {
+    padding-right: 0;
   }
 
   @media (min-width: $breakpoint-tablet) {
     .l-services__category {
       max-width: 100%;
+      min-height: 73px; //???
     }
 
     &__horizon-line {
@@ -197,6 +225,7 @@
   @media (min-width: $breakpoint-web) {
     .l-services__category {
       max-width: 100%;
+      min-height: 73px; //???
     }
 
     &__horizon-line {

@@ -1,0 +1,19 @@
+@import '../../css/global.scss';
+
+.l-general {
+  &__services-wrapper {
+    margin-top: 240px;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    &__services-wrapper {
+      margin-top: 518px;
+    }
+  }
+
+  @media (min-width: $breakpoint-web) {
+    &__services-wrapper {
+      margin-top: 479px;
+    }
+  }
+}

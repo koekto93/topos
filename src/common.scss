@@ -45,8 +45,8 @@ body {
 }
 
 .l-app-content {
-  background: url('images/uploads/pattern1.png') 100% 80px no-repeat,
-    url('images/uploads/pattern2.png') 100% 45% no-repeat;
+  background: url('images/pattern1.png') 100% 80px no-repeat,
+    url('images/pattern2.png') 100% 45% no-repeat;
   height: 4000px;
   z-index: 100;
 }
@@ -128,7 +128,7 @@ body {
   } */
 }
 
-.c-button {
+/* .c-button {
   //@include font-general(11px, normal, start, #1a1a1a, 0.1px);
   border-radius: 6px;
   border: 1px solid $link-text-color;
@@ -141,16 +141,25 @@ body {
 .c-button:hover {
   background-color: #e3775b;
   color: $white-text-color;
+} */
+h1 {
+  @include font-extra-bold(22px, 2, 0.57px, center);
+
+  @media (min-width: $breakpoint-tablet) {
+    @include font-extra-bold(35px, 1.57, 0.91px, center);
+  }
+
+  @media (min-width: $breakpoint-web) {
+    @include font-extra-bold(50px, 1.2, 1.3px, center);
+  }
 }
 
 h2 {
   @include font-extra-bold(35px, 1.57, 0.91px, center);
+  @media (min-width: $breakpoint-tablet) {
+  }
 }
 
 h3 {
   @include font-extra-bold(26px, 1.35, 0.68px);
-}
-
-h4 {
-  @include font-extra-bold(22px, 2, 0.57px, center);
 }

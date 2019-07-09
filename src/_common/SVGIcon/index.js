@@ -1,23 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
-
-import "./style.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const SVGIcon = ({ name }) => {
   if (!name) return null;
-  return (
-    <div className="c-svg-icon">
-      <img src={require(`../../images/img/${name}.svg`)} alt={`${name}Img`} />
-    </div>
-  );
+  return <img src={require(`../../images/${name}.svg`)} alt={`${name}Img`} />;
 };
 
 SVGIcon.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string,
 };
 
 SVGIcon.defaultProps = {
-  name: ""
+  name: '',
 };
 
 export default SVGIcon;
