@@ -1,4 +1,4 @@
-@import '../../../css/global.scss';
+@import "../../../css/global.scss";
 
 .l-services {
   &__points-wrapper {
@@ -147,7 +147,7 @@
 //стили для 2-го пункта сервисов
 .l-double-points {
   border-left: 2px dashed #825aa9;
-  min-height: 100px; //???
+  min-height: 100px;
 
   &__points-wrapper {
     position: relative;
@@ -159,21 +159,16 @@
 
   & .l-services__category {
     max-width: 120px;
+    height: 100%;
   }
 
   & .l-services__point {
-    min-height: 80px; //???
+    height: 100%;
   }
 
   &__horizon-line {
     width: 30px;
     border-top: 2px dashed #825aa9;
-  }
-
-  &__horizon-point-wrapper {
-    //position: absolute;
-    //top: 0;
-    //left: 140px;
   }
 
   &__horizon-point {
@@ -191,8 +186,7 @@
 
   &__description {
     @include font-general(11px, 1.55, 0.38px);
-    margin-left: 6px; //???
-    margin-bottom: 12px;
+    margin: 10px 0px 12px 6px;
   }
 
   &__without-right-padding {
@@ -202,15 +196,10 @@
   @media (min-width: $breakpoint-tablet) {
     .l-services__category {
       max-width: 100%;
-      min-height: 73px; //???
     }
 
     &__horizon-line {
       width: 70px;
-    }
-
-    &__horizon-point-wrapper {
-      left: 500px;
     }
 
     &__horizon-point {
@@ -225,15 +214,10 @@
   @media (min-width: $breakpoint-web) {
     .l-services__category {
       max-width: 100%;
-      min-height: 73px; //???
     }
 
     &__horizon-line {
       width: 70px;
-    }
-
-    &__horizon-point-wrapper {
-      left: 500px;
     }
 
     &__horizon-point {

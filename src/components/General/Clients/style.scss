@@ -1,0 +1,108 @@
+@import "../../../css/global.scss";
+
+.l-clients {
+  &__icons-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    & > div {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__mts {
+    margin-bottom: 62px;
+    flex-basis: 30%;
+  }
+  &__dme {
+    flex-basis: 50%;
+  }
+  &__stone-hedge {
+    margin-bottom: 68px;
+    flex-basis: 50%;
+  }
+  &__megafon {
+    flex-basis: 40%;
+  }
+
+  &__carl {
+    flex-basis: 20%;
+  }
+
+  &__muztv {
+    flex-basis: 20%;
+  }
+
+  &__mgt {
+    flex-basis: 20%;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    &__mts {
+      margin-bottom: 62px;
+      flex-basis: 30%;
+    }
+    &__dme {
+      flex-basis: 40%;
+    }
+    &__stone-hedge {
+      margin-bottom: 68px;
+      flex-basis: 50%;
+    }
+    &__megafon {
+      flex-basis: 40%;
+    }
+
+    &__carl {
+      flex-basis: 20%;
+    }
+
+    &__muztv {
+      flex-basis: 20%;
+      order: 2;
+    }
+
+    &__mgt {
+      flex-basis: 20%;
+    }
+  }
+
+  @media (min-width: $breakpoint-web) {
+    &__mts {
+      height: 65px;
+      width: 181px;
+      margin-bottom: 88px;
+    }
+    &__dme {
+      height: 28px;
+      width: 404px;
+    }
+    &__stone-hedge {
+      height: 11px;
+      width: 117px;
+      margin-bottom: 68px;
+    }
+    &__megafon {
+      height: 19px;
+      width: 110px;
+    }
+
+    &__carl {
+      height: 44px;
+      width: 44px;
+    }
+
+    &__muztv {
+      height: 44px;
+      width: 44px;
+      order: 2;
+    }
+
+    &__mgt {
+      height: 44px;
+      width: 44px;
+    }
+  }
+}

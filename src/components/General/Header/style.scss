@@ -1,12 +1,9 @@
-@import '../../../css/global.scss';
+@import "../../../css/global.scss";
 
 .l-header {
   margin-top: 64px;
-  &__logo {
-    background: url('../../../images/topos.png') no-repeat;
-    background-size: contain;
-    width: 190px;
-    height: 35px;
+  &__logo-wrapper {
+    height: 47px;
   }
 
   &__subscription {
@@ -21,9 +18,8 @@
 
   @media (min-width: $breakpoint-tablet) {
     margin-top: 260px;
-    &__logo {
-      width: 262px;
-      height: 49px;
+    &__logo-wrapper {
+      height: 65px;
     }
     &__subscription {
       @include font-medium(12px, 2.08, 1.06px, center);
@@ -36,9 +32,8 @@
 
   @media (min-width: $breakpoint-web) {
     margin-top: 260px;
-    &__logo {
-      width: 350px;
-      height: 65px;
+    &__logo-wrapper {
+      height: 85px;
     }
     &__subscription {
       @include font-medium(13px, 1.92, 1.15px, center);

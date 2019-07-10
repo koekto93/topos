@@ -1,18 +1,17 @@
-import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+import React from "react";
+import { Row, Col } from "react-flexbox-grid";
 
-import './style.scss';
+import SVGIcon from "../../../_common/SVGIcon";
+
+import "./style.scss";
 
 const Header = () => (
   <Row className="l-header" center="xs">
     <Col xs={10}>
-      <Row>
+      <Row center="xs">
         <Col xs={12}>
           <div className="l-header__logo-wrapper display-flex _j-center">
-            <div className="l-header__logo" />
-          </div>
-          <div className="l-header__subscription">
-            <span>Product consultancy and design studio</span>
+            <SVGIcon name="topos" />
           </div>
         </Col>
       </Row>
