@@ -1,18 +1,18 @@
-import React from "react";
-import { Row, Col } from "react-flexbox-grid";
+import React from 'react';
+import { Row, Col } from 'react-flexbox-grid';
 
 import {
   pointsBlockNameText,
-  pointBlockText
-} from "../../../constants/general";
+  pointBlockText,
+} from '../../../constants/general';
 
-import "./style.scss";
+import './style.scss';
 
-const lang = "eng";
+const lang = 'eng';
 
 function getTexts(texts, lang) {
-  return texts.map(item => (
-    <div className="l-points__text-block">
+  return texts.map((item, i) => (
+    <div key={i} className="l-points__text-block">
       <div className="l-points__gradient-block" />
       <div className="l-points__text">
         <span>{item[lang]}</span>
