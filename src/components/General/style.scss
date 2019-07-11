@@ -1,19 +1,39 @@
-@import '../../css/global.scss';
+@import "../../css/global.scss";
 
 .l-general {
   &__services-wrapper {
     margin-top: 240px;
   }
 
+  &__clients-wrapper {
+    margin-top: 85px;
+  }
+
+  &__points-wrapper {
+    margin-top: 147px;
+  }
+
   @media (min-width: $breakpoint-tablet) {
     &__services-wrapper {
       margin-top: 518px;
+    }
+    &__clients-wrapper {
+      margin-top: 441px;
+    }
+    &__points-wrapper {
+      margin-top: 520px;
     }
   }
 
   @media (min-width: $breakpoint-web) {
     &__services-wrapper {
       margin-top: 479px;
+    }
+    &__clients-wrapper {
+      margin-top: 429px;
+    }
+    &__points-wrapper {
+      margin-top: 406px;
     }
   }
 }

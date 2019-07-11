@@ -1,0 +1,35 @@
+@import "../../../css/global.scss";
+
+.l-points {
+  &__blocks-wrapper {
+    margin-top: 31px;
+  }
+  &__gradient-block {
+    height: 2px;
+    background-image: linear-gradient(to right, #0ab4d3, #000000);
+  }
+  &__text {
+    @include font-general(14px, 1.79, 0.36px);
+    margin: 10px 0 30px;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    &__blocks-wrapper {
+      margin-top: 77px;
+    }
+    &__text {
+      @include font-general(18px, 2.11, 0.46px);
+      margin: 20px 0 55px;
+    }
+  }
+
+  @media (min-width: $breakpoint-web) {
+    &__blocks-wrapper {
+      margin-top: 78px;
+    }
+    &__text {
+      @include font-general(24px, 1.67, 0.61px);
+      margin: 15px 0 55px;
+    }
+  }
+}

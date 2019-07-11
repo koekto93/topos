@@ -1,33 +1,33 @@
-@import './css/global.scss';
+@import "./css/global.scss";
 
-$font-path: 'assets/fonts';
+$font-path: "assets/fonts";
 
 @font-face {
   font-family: Avenir-Roman;
-  src: url('#{$font-path}/Avenir-Roman.ttf');
+  src: url("#{$font-path}/Avenir-Roman.ttf");
 }
 
 @font-face {
   font-family: Geometria-Bold;
-  src: url('#{$font-path}/Geometria-Bold.ttf');
+  src: url("#{$font-path}/Geometria-Bold.ttf");
 }
 
 @font-face {
   font-family: Geometria-ExtraBold;
-  src: url('#{$font-path}/Geometria-ExtraBold.ttf');
+  src: url("#{$font-path}/Geometria-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: Geometria;
-  src: url('#{$font-path}/Geometria.ttf');
+  src: url("#{$font-path}/Geometria.ttf");
 }
 
 @font-face {
   font-family: Geometria-Medium;
-  src: url('#{$font-path}/Geometria-Medium.otf');
+  src: url("#{$font-path}/Geometria-Medium.otf");
 }
 
-$image_dir: '../img/';
+$image_dir: "../img/";
 
 body {
   //width: 1280px;
@@ -45,9 +45,9 @@ body {
 }
 
 .l-app-content {
-  background: url('images/pattern1.png') 100% 80px no-repeat,
-    url('images/pattern2.png') 100% 45% no-repeat;
-  height: 4000px;
+  background: url("images/pattern1.png") 100% 80px no-repeat,
+    url("images/pattern2.png") 100% 45% no-repeat;
+  //height: 4000px;
   z-index: 100;
 }
 
@@ -64,10 +64,10 @@ body {
   width: $width;
   height: $height;
   background-color: $color;
-  -webkit-mask-image: url($image_dir+$name+'.svg');
+  -webkit-mask-image: url($image_dir+$name+".svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
-  mask-image: url($image_dir+$name+'.svg');
+  mask-image: url($image_dir+$name+".svg");
   mask-repeat: no-repeat;
   mask-size: 100%;
 }

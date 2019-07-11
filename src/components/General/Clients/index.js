@@ -1,15 +1,16 @@
-import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+import React from "react";
+import { Row, Col } from "react-flexbox-grid";
 
 import {
   clientButtonText,
-  clientBlockNameText,
-} from '../../../constants/general';
-import SVGIcon from '../../../_common/SVGIcon';
+  clientBlockNameText
+} from "../../../constants/general";
+import SVGIcon from "../../../_common/SVGIcon";
+import Button from "../../../_common/Button";
 
-import './style.scss';
+import "./style.scss";
 
-const lang = 'eng';
+const lang = "eng";
 
 const Clients = () => (
   <Row center="xs" className="l-clients">
@@ -19,7 +20,7 @@ const Clients = () => (
           <h1>{clientBlockNameText[lang]}</h1>
         </Col>
       </Row>
-      <Row>
+      <Row className="l-clients__icons">
         <Col xs={12}>
           <div className="l-clients__icons-wrapper">
             <div className="l-clients__mts">
@@ -44,6 +45,11 @@ const Clients = () => (
               <SVGIcon name="mgt" />
             </div>
           </div>
+        </Col>
+      </Row>
+      <Row center="xs">
+        <Col className="l-services__button">
+          <Button text={clientButtonText[lang]} />
         </Col>
       </Row>
     </Col>

@@ -120,3 +120,41 @@ export const clientBlockNameText = {
   ru: "Наши клиенты",
   eng: "Our clients"
 };
+
+export const pointsBlockNameText = {
+  ru: "Наши сильные стороны",
+  eng: "Our strong points"
+};
+
+export const pointBlockText = [
+  {
+    ru:
+      "Предоставляем небольшие команды профессионалов для скорейшего и более эффективного достижения ваших целей, без лишних трат.",
+    eng:
+      "We provide small team to deliver your task and make it as efficient as possible, without wasting too much money and time."
+  },
+  {
+    ru:
+      "За годы работы мы набрали опыт проектирования и графического оформления сложных систем, таких как: CRM, ERP, LMS и других корпоративных приложений. Что позволяет нам экономить время и ресурсы на их создание.",
+    eng:
+      "Over the years we gained a lot of experince planning, designing and emplementing complex systems like CRM, ERP, LMS and other enterprise level solutions with a fraction of time and resources to deliver ready to code solutions."
+  },
+
+  {
+    ru:
+      "Мы оперативно и качественно разрабатываем мобильные приложения для обоих платформ - Ios и Android.",
+    eng:
+      "What else — we can swiftly design mobile application solutions at both mobile platforms of Ios & android."
+  },
+  {
+    ru:
+      "Мы разбираемся в рабочих процессах клиента и создаем инструменты для снижения затрат на запуск и извлечения максимальной прибыли.",
+    eng:
+      "We prefer to get a deeper undestanding of clients processes and design a tool to achive high results in time-to-market golas and maximizing profit of fast shipment."
+  }
+];
+
+export const footerBlockNameText = {
+  ru: "Наши контакты",
+  eng: "Contact us"
+};

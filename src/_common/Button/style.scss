@@ -1,4 +1,4 @@
-@import '../../css/global.scss';
+@import "../../css/global.scss";
 
 .c-button {
   @include font-general(14px);
@@ -15,15 +15,5 @@
   &:hover {
     background-image: linear-gradient(transparent, transparent),
       radial-gradient(circle at top left, #0ab4d3, #bf2c95);
-  }
-
-  @media (min-width: $breakpoint-tablet) {
-    width: 220px;
-    height: 43px;
-  }
-
-  @media (min-width: $breakpoint-web) {
-    width: 220px;
-    height: 43px;
   }
 }

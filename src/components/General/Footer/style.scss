@@ -1,0 +1,12 @@
+@import "../../../css/global.scss";
+
+.l-footer {
+  &__gradient-block {
+    height: 2px;
+    background-image: linear-gradient(to right, #2ab6bf, #bf2c95);
+  }
+
+  &__title {
+    @include font-extra-bold(18px, 1.61, 0.46px);
+  }
+}

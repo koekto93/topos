@@ -1,6 +1,9 @@
-@import '../../../css/global.scss';
+@import "../../../css/global.scss";
 
 .l-clients {
+  &__icons {
+    margin: 60px 0;
+  }
   &__icons-wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -61,6 +64,9 @@
   }
 
   @media (min-width: $breakpoint-tablet) {
+    &__icons {
+      margin: 93px 0 80px;
+    }
     &__icons-wrapper {
       & > div {
         height: 70px;
@@ -83,7 +89,6 @@
     }
     &__stone-hedge {
       flex-basis: 29%;
-      //margin-bottom: 68px;
       & > img {
         max-width: 181px;
       }
@@ -120,6 +125,14 @@
   }
 
   @media (min-width: $breakpoint-web) {
+    &__icons {
+      margin: 86px 0 90px;
+    }
+    &__icons-wrapper {
+      & > div {
+        height: 108px;
+      }
+    }
     &__mts {
       flex-basis: 25%;
       margin-bottom: 88px;
@@ -132,27 +145,27 @@
       flex-basis: 45%;
       order: -5;
       & > img {
-        max-width: 263px;
+        max-width: 404px;
       }
     }
     &__stone-hedge {
       flex-basis: 29%;
       //margin-bottom: 68px;
       & > img {
-        max-width: 181px;
+        max-width: 279px;
       }
     }
     &__megafon {
       flex-basis: 29%;
       & > img {
-        max-width: 157px;
+        max-width: 241px;
       }
     }
 
     &__carl {
       flex-basis: 20%;
       & > img {
-        max-width: 70px;
+        max-width: 108px;
       }
       order: -3;
     }
@@ -160,7 +173,7 @@
     &__muztv {
       flex-basis: 20%;
       & > img {
-        max-width: 70px;
+        max-width: 108px;
       }
       order: -4;
     }
@@ -168,7 +181,7 @@
     &__mgt {
       flex-basis: 20%;
       & > img {
-        max-width: 70px;
+        max-width: 108px;
       }
     }
   }
