@@ -1,18 +1,16 @@
-import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+import React from "react";
+import { Row, Col } from "react-flexbox-grid";
 
-import SVGIcon from '../../../_common/SVGIcon';
-import Button from '../../../_common/Button';
+import SVGIcon from "../../../_common/SVGIcon";
+import Button from "../../../_common/Button";
 import {
   footerBlockNameText,
-  serviceButtonText,
-} from '../../../constants/general';
+  serviceButtonText
+} from "../../../constants/general";
 
-import './style.scss';
+import "./style.scss";
 
-const lang = 'eng';
-
-const Footer = () => (
+const Footer = ({ lang }) => (
   <Row center="xs" className="l-footer">
     <Col xs={12}>
       <div className="l-footer__gradient-block" />

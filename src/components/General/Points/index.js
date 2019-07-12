@@ -1,14 +1,12 @@
-import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+import React from "react";
+import { Row, Col } from "react-flexbox-grid";
 
 import {
   pointsBlockNameText,
-  pointBlockText,
-} from '../../../constants/general';
+  pointBlockText
+} from "../../../constants/general";
 
-import './style.scss';
-
-const lang = 'eng';
+import "./style.scss";
 
 function getTexts(texts, lang) {
   return texts.map((item, i) => (
@@ -21,7 +19,7 @@ function getTexts(texts, lang) {
   ));
 }
 
-const Points = () => (
+const Points = ({ lang }) => (
   <Row center="xs" className="l-points">
     <Col xs={12}>
       <Row center="xs">

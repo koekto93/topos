@@ -1,3 +1,8 @@
+export const headerCaption = {
+  ru: "Помогаем бизнесу и корпорациямделать продукты лучше и быстрее.",
+  eng: "We help new business and corporates make products better and faster."
+};
+
 export const firstPartServices = [
   {
     id: "product-discovery",

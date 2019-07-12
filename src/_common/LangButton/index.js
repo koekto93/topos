@@ -1,13 +1,29 @@
-import React from 'react';
+import React from "react";
+import { connect } from "react-redux";
 
-import './style.scss';
+import { changeLang } from "../../redux/modules/general";
+import { getLang } from "../../selector/general";
+import "./style.scss";
 
-const LangButton = () => (
-  <LangContext.Consumer>
-    <div className="c-lang-button display-flex _a-center _j-center">
-      <span>RU</span>
+const LangButton = ({ lang, changeLang }) => {
+  const handleToggleLang = event => {
+    event.stopPropagation();
+    changeLang(lang === "ru" ? "eng" : "ru");
+  };
+  return (
+    <div
+      onClick={handleToggleLang}
+      className="c-lang-button display-flex _a-center _j-center"
+    >
+      <span>{lang === "ru" ? "RU" : "EN"}</span>
     </div>
-  </LangContext.Consumer>
-);
+  );
+};
 
-export default LangButton;
+const mapStateToProps = state => ({
+  lang: getLang(state)
+});
+export default connect(
+  mapStateToProps,
+  { changeLang }
+)(LangButton);

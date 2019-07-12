@@ -1,11 +1,12 @@
 import React from "react";
 import { Row, Col } from "react-flexbox-grid";
 
+import { headerCaption } from "../../../constants/general";
 import SVGIcon from "../../../_common/SVGIcon";
 
 import "./style.scss";
 
-const Header = () => (
+const Header = ({ lang }) => (
   <Row className="l-header" center="xs">
     <Col xs={10}>
       <Row center="xs">
@@ -17,9 +18,7 @@ const Header = () => (
       </Row>
 
       <div className="l-header__description">
-        <span>
-          We help new business and corporates make products better and faster.
-        </span>
+        <span>{headerCaption[lang]}</span>
       </div>
     </Col>
   </Row>

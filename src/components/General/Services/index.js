@@ -11,8 +11,6 @@ import {
 } from "../../../constants/general";
 import "./style.scss";
 
-const lang = "eng";
-
 function getAllDescriptions() {
   const resultData = [
     ...firstPartServices,
@@ -101,7 +99,7 @@ function getDoublePoints(items, setNewPoint, selectedPoint, lang) {
   );
 }
 
-const Services = () => {
+const Services = ({ lang }) => {
   const [selectedPoint, setPoint] = useState(null);
   const setNewPoint = event => {
     event.stopPropagation();

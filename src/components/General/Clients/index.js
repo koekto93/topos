@@ -10,9 +10,7 @@ import Button from "../../../_common/Button";
 
 import "./style.scss";
 
-const lang = "eng";
-
-const Clients = () => (
+const Clients = ({ lang }) => (
   <Row center="xs" className="l-clients">
     <Col xs={12}>
       <Row center="xs">
