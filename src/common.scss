@@ -45,12 +45,27 @@ body {
 }
 
 .l-app-content {
-  background: url('images/pattern1.png') 0 497px;
-  /* url('images/pattern2.png') 100% 45% no-repeat; */
-  //height: 4000px;
-  background-repeat: repeat-y;
-  background-position: 0% 20%;
+  background: url('images/pattern-web-1.svg') 0 64px,
+    url('images/pattern-web-2.svg') 0 1436px;
+  background-repeat: no-repeat;
+  background-size: contain;
   z-index: 100;
+
+  @media (min-width: $breakpoint-tablet) {
+    background: url('images/pattern-web-1.svg') 0 80px,
+      url('images/pattern-web-2.svg') 0 1494px,
+      url('images/pattern-web-3.svg') 0 2453px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: $breakpoint-web) {
+    background: url('images/pattern-web-1.svg') 0 80px,
+      url('images/pattern-web-2.svg') 0 1494px,
+      url('images/pattern-web-3.svg') 0 2453px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .link-color {

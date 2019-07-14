@@ -1,6 +1,22 @@
-@import "../../../css/global.scss";
+@import '../../../css/global.scss';
 
 .l-clients {
+  & a {
+    text-decoration: none;
+  }
+  & a:link {
+    color: #ffffff;
+  }
+  & a:visited {
+    color: #ffffff;
+  }
+  & a:hover {
+    color: #ffffff;
+  }
+  & a:active {
+    color: #ffffff;
+  }
+
   &__icons {
     margin: 60px 0;
   }

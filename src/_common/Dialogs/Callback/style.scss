@@ -1,1 +1,45 @@
-@import "../../../css/global.scss";
+@import '../../../css/global.scss';
+
+.l-callback {
+  width: 300px;
+  height: 422px;
+  padding: 40px 0;
+  background-image: linear-gradient(to bottom, #001a34, #001a34);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    @include font-general(18px, 2.11, 0.46px);
+  }
+
+  &__name {
+    margin-bottom: 20px;
+  }
+
+  &__email {
+    margin-bottom: 32px;
+  }
+
+  &__request {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 400px;
+  }
+
+  @media (min-width: $breakpoint-web) {
+    width: 400px;
+  }
+}
+
+.l-callback-form {
+  position: relative;
+
+  &__close {
+    position: absolute;
+    top: 19px;
+    right: 19px;
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../css/global.scss';
+
+.c-custom-textarea {
+  &__label {
+    @include font-general(12px, 1.33);
+    margin-bottom: 7px;
+  }
+  &__textarea {
+    @include font-input(13px, 1.38);
+    border-radius: 4px;
+    width: 220px;
+    min-height: 83px;
+    resize: none;
+    padding: 5px 7px;
+    outline: none;
+  }
+}

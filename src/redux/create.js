@@ -1,10 +1,10 @@
-import { createStore as _createStore, applyMiddleware } from "redux";
-import logger from "redux-logger";
+import { createStore as _createStore, applyMiddleware } from 'redux';
+//import logger from 'redux-logger';
 
-import reducer from "./modules";
+import reducer from './modules';
 
 export default function createStore() {
-  const store = _createStore(reducer, applyMiddleware(logger));
+  const store = _createStore(reducer, applyMiddleware(/* logger */));
 
   return store;
 }

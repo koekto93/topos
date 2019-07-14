@@ -1,0 +1,17 @@
+@import '../../css/global.scss';
+
+.c-custom-input {
+  &__label {
+    @include font-general(12px, 1.33);
+    margin-bottom: 7px;
+  }
+  &__input {
+    @include font-input(13px, 1.38);
+    width: 220px;
+    height: 28px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 7px;
+    outline: none;
+  }
+}

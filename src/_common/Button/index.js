@@ -2,9 +2,18 @@ import React from 'react';
 
 import './style.scss';
 
-const Button = ({ text }) => (
-  <div className="c-button display-flex _a-center _j-center">
-    <span>{text}</span>
+const Button = ({ text, handleClick, fileName }) => (
+  <div
+    className="c-button display-flex _a-center _j-center"
+    onClick={handleClick}
+  >
+    {fileName ? (
+      <a href={require(`../../docs/${fileName}.pdf`)} download>
+        {text}
+      </a>
+    ) : (
+      <span>{text}</span>
+    )}
   </div>
 );
 
