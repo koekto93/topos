@@ -1,5 +1,29 @@
+@import "../css/global.scss";
+
 .wrap {
-  background: linear-gradient(to bottom, #001a34 0%, #000000);
+  //background: linear-gradient(to bottom, #001a34 0%, #000000);
   //padding: 0;
   position: relative;
+
+  background: url("../images/pattern-web-1.svg") 0 64px,
+    url("../images/pattern-web-2.svg") 0 1436px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  //z-index: 100;
+
+  @media (min-width: $breakpoint-tablet) {
+    background: url("../images/pattern-web-1.svg") 0 80px,
+      url("../images/pattern-web-2.svg") 0 1494px,
+      url("../images/pattern-web-3.svg") 0 2453px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: $breakpoint-web) {
+    background: url("../images/pattern-web-1.svg") 0 80px,
+      url("../images/pattern-web-2.svg") 0 1494px,
+      url("../images/pattern-web-3.svg") 0 2453px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

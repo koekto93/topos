@@ -1,19 +1,20 @@
-import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+import React from "react";
+import { Row, Col } from "react-flexbox-grid";
 
-import SVGIcon from '../../../_common/SVGIcon';
-import Button from '../../../_common/Button';
+import SVGIcon from "../../../_common/SVGIcon";
+import Button from "../../../_common/Button";
 import {
   footerBlockNameText,
-  serviceButtonText,
-} from '../../../constants/general';
+  footerAddressBlock,
+  serviceButtonText
+} from "../../../constants/general";
 
-import './style.scss';
+import "./style.scss";
 
 const Footer = ({ lang, onChangeSelectedModalName }) => {
   const handleClick = event => {
     event.stopPropagation();
-    onChangeSelectedModalName('callbackModal');
+    onChangeSelectedModalName("callbackModal");
   };
   return (
     <Row center="xs" className="l-footer">
@@ -35,7 +36,9 @@ const Footer = ({ lang, onChangeSelectedModalName }) => {
                         <SVGIcon name="mail" />
                       </div>
                       <div className="l-footer__icon-label">
-                        <span>hello@topos.studio</span>
+                        <a href="mailto:hello@topos.studio">
+                          hello@topos.studio
+                        </a>
                       </div>
                     </div>
                   </Col>
@@ -45,7 +48,7 @@ const Footer = ({ lang, onChangeSelectedModalName }) => {
                         <SVGIcon name="locate" />
                       </div>
                       <div className="l-footer__icon-label">
-                        <span>Rudi-Dutschke-Straße 23, Berlin </span>
+                        <span>{footerAddressBlock[lang]}</span>
                       </div>
                     </div>
                   </Col>

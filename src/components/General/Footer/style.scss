@@ -1,4 +1,4 @@
-@import '../../../css/global.scss';
+@import "../../../css/global.scss";
 
 .l-footer {
   &__gradient-block {
@@ -27,6 +27,21 @@
 
   &__icon-label {
     @include font-general(14px, 2.86, 0.36px);
+    & a {
+      text-decoration: none;
+    }
+    & a:link {
+      color: #ffffff;
+    }
+    & a:visited {
+      color: #ffffff;
+    }
+    & a:hover {
+      color: #ffffff;
+    }
+    & a:active {
+      color: #ffffff;
+    }
     margin-left: 14px;
   }
   &__button {
@@ -42,7 +57,7 @@
   }
 
   &__logo {
-    background: url('../../../images/topos.png') no-repeat;
+    background: url("../../../images/topos.png") no-repeat;
     background-size: contain;
     width: 102px;
     height: 19px;

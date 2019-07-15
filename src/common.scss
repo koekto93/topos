@@ -1,51 +1,43 @@
-@import './css/global.scss';
+@import "./css/global.scss";
 
-$font-path: 'assets/fonts';
+$font-path: "assets/fonts";
 
 @font-face {
   font-family: Avenir-Roman;
-  src: url('#{$font-path}/Avenir-Roman.ttf');
+  src: url("#{$font-path}/Avenir-Roman.ttf");
 }
 
 @font-face {
   font-family: Geometria-Bold;
-  src: url('#{$font-path}/Geometria-Bold.ttf');
+  src: url("#{$font-path}/Geometria-Bold.ttf");
 }
 
 @font-face {
   font-family: Geometria-ExtraBold;
-  src: url('#{$font-path}/Geometria-ExtraBold.ttf');
+  src: url("#{$font-path}/Geometria-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: Geometria;
-  src: url('#{$font-path}/Geometria.ttf');
+  src: url("#{$font-path}/Geometria.ttf");
 }
 
 @font-face {
   font-family: Geometria-Medium;
-  src: url('#{$font-path}/Geometria-Medium.otf');
+  src: url("#{$font-path}/Geometria-Medium.otf");
 }
 
-$image_dir: '../img/';
+$image_dir: "../img/";
 
 body {
   //width: 1280px;
   background-size: cover;
-  //margin: 0 auto;
-  /*   display: flex;
-  flex-direction: column;
-  .content {
-    flex: 1 0 auto;
-  }
-  
-  footer {
-    flex: 0 0 auto;
-  } */
+
+  background: linear-gradient(to bottom, #001a34 0%, #000000);
 }
 
 .l-app-content {
-  background: url('images/pattern-web-1.svg') 0 64px,
+  /* background: url('images/pattern-web-1.svg') 0 64px,
     url('images/pattern-web-2.svg') 0 1436px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -65,7 +57,7 @@ body {
       url('images/pattern-web-3.svg') 0 2453px;
     background-repeat: no-repeat;
     background-size: contain;
-  }
+  } */
 }
 
 .link-color {
@@ -81,10 +73,10 @@ body {
   width: $width;
   height: $height;
   background-color: $color;
-  -webkit-mask-image: url($image_dir+$name+'.svg');
+  -webkit-mask-image: url($image_dir+$name+".svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
-  mask-image: url($image_dir+$name+'.svg');
+  mask-image: url($image_dir+$name+".svg");
   mask-repeat: no-repeat;
   mask-size: 100%;
 }
