@@ -60,9 +60,10 @@
 
   &__carl {
     flex-basis: 20%;
-    & > img {
-      max-width: 44px;
-    }
+    background: url('../../../images/carl.png') 50% 50% no-repeat;
+    background-size: contain;
+    height: 44px;
+    height: 100%;
   }
 
   &__muztv {
@@ -118,9 +119,7 @@
 
     &__carl {
       flex-basis: 20%;
-      & > img {
-        max-width: 70px;
-      }
+      max-height: 70px;
       order: -3;
     }
 
@@ -180,9 +179,7 @@
 
     &__carl {
       flex-basis: 20%;
-      & > img {
-        max-width: 108px;
-      }
+      max-height: 108px;
       order: -3;
     }
 

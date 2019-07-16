@@ -33,9 +33,7 @@ const Clients = ({ lang }) => (
             <div className="l-clients__megafon">
               <SVGIcon name="megafon" />
             </div>
-            <div className="l-clients__carl">
-              <SVGIcon name="carl" />
-            </div>
+            <div className="l-clients__carl" />
             <div className="l-clients__muztv">
               <SVGIcon name="muztv" />
             </div>

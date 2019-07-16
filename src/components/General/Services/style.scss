@@ -1,4 +1,4 @@
-@import "../../../css/global.scss";
+@import '../../../css/global.scss';
 
 .l-services {
   &__points-wrapper {
@@ -153,6 +153,9 @@
   &__points-wrapper {
     position: relative;
     padding-bottom: 20px;
+    &._without-bottom-padding {
+      padding-bottom: 0px;
+    }
   }
 
   & .row {
@@ -189,14 +192,6 @@
   &__description {
     @include font-general(11px, 1.55, 0.38px);
     margin: 10px 0px 12px 6px;
-
-    &._without-bottom-padding {
-      .l-double-points {
-        &__points-wrapper {
-          padding-bottom: 0 !important;
-        }
-      }
-    }
   }
 
   &__without-right-padding {
@@ -219,6 +214,16 @@
     &__description {
       display: none;
     }
+
+    & .l-services__point {
+      min-height: 50px;
+    }
+
+    &__points-wrapper {
+      &._without-bottom-padding {
+        padding-bottom: 20px;
+      }
+    }
   }
 
   @media (min-width: $breakpoint-web) {
@@ -236,6 +241,16 @@
 
     &__description {
       display: none;
+    }
+
+    & .l-services__point {
+      min-height: 50px;
+    }
+
+    &__points-wrapper {
+      &._without-bottom-padding {
+        padding-bottom: 20px;
+      }
     }
   }
 }

@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import { Row, Col } from "react-flexbox-grid";
+import React, { useState } from 'react';
+import { Row, Col } from 'react-flexbox-grid';
 
-import Button from "../../../_common/Button";
+import Button from '../../../_common/Button';
 
 import {
   serviceButtonText,
   serviceBlockNameText,
   firstPartServices,
   secondPartServices,
-  thirdPartServices
-} from "../../../constants/general";
-import "./style.scss";
+  thirdPartServices,
+} from '../../../constants/general';
+import './style.scss';
 
 function getAllDescriptions() {
   const resultData = [
     ...firstPartServices,
     ...secondPartServices,
-    ...thirdPartServices
+    ...thirdPartServices,
   ];
   return resultData.reduce((sum, current) => {
     sum[current.id] = current.description;
@@ -32,7 +32,7 @@ function getSimplePoints(items, setNewPoint, selectedPoint, lang) {
       <span className="l-services__list-style" />
       <div
         className={`l-services__category ${
-          selectedPoint === item.id ? "_active" : ""
+          selectedPoint === item.id ? '_active' : ''
         }`}
         onClick={setNewPoint}
       >
@@ -42,7 +42,7 @@ function getSimplePoints(items, setNewPoint, selectedPoint, lang) {
         <span>
           {selectedPoint === item.id
             ? allDescriptions[selectedPoint][lang]
-            : ""}
+            : ''}
         </span>
       </div>
     </div>
@@ -52,7 +52,15 @@ function getSimplePoints(items, setNewPoint, selectedPoint, lang) {
 function getDoublePoints(items, setNewPoint, selectedPoint, lang) {
   return (
     <div className="l-double-points">
-      <Row className="l-double-points__points-wrapper" between="xs" top="xs">
+      <Row
+        className={`l-double-points__points-wrapper ${
+          selectedPoint === items[0].id || selectedPoint === items[1].id
+            ? '_without-bottom-padding'
+            : ''
+        }`}
+        between="xs"
+        top="xs"
+      >
         <Col
           className={`l-services__point ${items[0].class} _no-border`}
           xs={7}
@@ -61,7 +69,7 @@ function getDoublePoints(items, setNewPoint, selectedPoint, lang) {
           <span className="l-services__list-style" />
           <div
             className={`l-services__category ${
-              selectedPoint === items[0].id ? "_active" : ""
+              selectedPoint === items[0].id ? '_active' : ''
             }`}
             onClick={setNewPoint}
           >
@@ -75,7 +83,7 @@ function getDoublePoints(items, setNewPoint, selectedPoint, lang) {
               <span className="l-services__list-style" />
               <div
                 className={`l-services__category display-flex _a-center ${
-                  selectedPoint === items[1].id ? "_active" : ""
+                  selectedPoint === items[1].id ? '_active' : ''
                 }`}
                 onClick={setNewPoint}
               >
@@ -87,17 +95,11 @@ function getDoublePoints(items, setNewPoint, selectedPoint, lang) {
       </Row>
       <Row>
         <Col xs={9}>
-          <div
-            className={`l-double-points__description _mobile ${
-              selectedPoint === items[0].id || selectedPoint === items[1].id
-                ? "_without-bottom-padding"
-                : ""
-            }`}
-          >
+          <div className={'l-double-points__description _mobile'}>
             <span>
               {selectedPoint === items[0].id || selectedPoint === items[1].id
                 ? allDescriptions[selectedPoint][lang]
-                : ""}
+                : ''}
             </span>
           </div>
         </Col>
@@ -115,7 +117,7 @@ const Services = ({ lang, onChangeSelectedModalName }) => {
 
   const handleClick = event => {
     event.stopPropagation();
-    onChangeSelectedModalName("callbackModal");
+    onChangeSelectedModalName('callbackModal');
   };
   return (
     <Row center="xs" className="l-services">
@@ -132,14 +134,14 @@ const Services = ({ lang, onChangeSelectedModalName }) => {
                 firstPartServices,
                 setNewPoint,
                 selectedPoint,
-                lang
+                lang,
               )}
             </div>
           </Col>
           <Col xs={6}>
             <div className="l-services__description _big">
               <span>
-                {selectedPoint ? allDescriptions[selectedPoint][lang] : ""}
+                {selectedPoint ? allDescriptions[selectedPoint][lang] : ''}
               </span>
             </div>
           </Col>
@@ -148,7 +150,7 @@ const Services = ({ lang, onChangeSelectedModalName }) => {
               secondPartServices,
               setNewPoint,
               selectedPoint,
-              lang
+              lang,
             )}
           </Col>
           <Col xs={12} md={6}>
@@ -157,7 +159,7 @@ const Services = ({ lang, onChangeSelectedModalName }) => {
                 thirdPartServices,
                 setNewPoint,
                 selectedPoint,
-                lang
+                lang,
               )}
             </div>
           </Col>
