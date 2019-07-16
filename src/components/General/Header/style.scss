@@ -3,12 +3,12 @@
 .l-header {
   margin-top: 64px;
   &__logo-wrapper {
-    height: 47px;
+    height: 35px;
   }
 
   &__subscription {
     @include font-medium(10px, 1.6, 0.89px, center);
-    margin-top: 12px;
+    margin-top: 14px;
   }
 
   &__description {
@@ -19,7 +19,7 @@
   @media (min-width: $breakpoint-tablet) {
     margin-top: 260px;
     &__logo-wrapper {
-      height: 65px;
+      height: 49px;
     }
     &__subscription {
       @include font-medium(12px, 2.08, 1.06px, center);
@@ -33,7 +33,7 @@
   @media (min-width: $breakpoint-web) {
     margin-top: 260px;
     &__logo-wrapper {
-      height: 85px;
+      height: 65px;
     }
     &__subscription {
       @include font-medium(13px, 1.92, 1.15px, center);

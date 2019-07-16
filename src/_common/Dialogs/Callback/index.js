@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import ModalDialog from '../../ModalDialog';
-import Button from '../../Button';
-import Input from '../../Input';
-import SVGIcon from '../../SVGIcon';
-import TextArea from '../../TextArea';
-import { callbackModal } from '../../../constants/general';
-import { sendForm } from '../../../api/general';
+import ModalDialog from "../../ModalDialog";
+import Button from "../../Button";
+import Input from "../../Input";
+import SVGIcon from "../../SVGIcon";
+import TextArea from "../../TextArea";
+import { callbackModal } from "../../../constants/general";
+import { sendForm } from "../../../api/general";
 
-import './style.scss';
+import "./style.scss";
 
-const modalName = 'callbackModal';
+const modalName = "callbackModal";
 
 const Callback = ({
   onClose,
   selectedModalName,
   onChangeSelectedModalName,
-  lang,
+  lang
 }) => {
   const [values, setValues] = useState({});
 
@@ -25,7 +25,7 @@ const Callback = ({
     const res = await sendForm(values);
     if (res) {
       setValues({});
-      onChangeSelectedModalName('successModal');
+      onChangeSelectedModalName("successModal");
     }
   };
 
@@ -40,9 +40,15 @@ const Callback = ({
       //isMobile={isMobile}
     >
       <form name="send-form" className="l-callback-form">
-        <div className="l-callback-form__close" onClick={onClose}>
-          <SVGIcon name="close" />
+        <div
+          className="l-callback-form__close-wrapper display-flex _a-center _j-center"
+          onClick={onClose}
+        >
+          <div className="l-callback-form__close">
+            <SVGIcon name="close" />
+          </div>
         </div>
+
         <div className="l-callback">
           <article className="l-callback__name">
             <Input
@@ -50,7 +56,7 @@ const Callback = ({
               label={callbackModal.name.label[lang]}
               name="customerName"
               onChange={handleChangeValue}
-              value={values['customerName']}
+              value={values["customerName"]}
             />
           </article>
           <article className="l-callback__email">
@@ -58,7 +64,7 @@ const Callback = ({
               placeholder={callbackModal.email.placeholder[lang]}
               label={callbackModal.email.label[lang]}
               name="customerEmail"
-              value={values['customerEmail']}
+              value={values["customerEmail"]}
               onChange={handleChangeValue}
               type="email"
             />
@@ -69,7 +75,7 @@ const Callback = ({
               label={callbackModal.request.label[lang]}
               name="customerWorkDescription"
               onChange={handleChangeValue}
-              value={values['customerWorkDescription']}
+              value={values["customerWorkDescription"]}
             />
           </article>
           <Button handleClick={onSubmit} text={callbackModal.button[lang]} />

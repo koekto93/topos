@@ -24,40 +24,21 @@ $font-path: "assets/fonts";
 
 @font-face {
   font-family: Geometria-Medium;
-  src: url("#{$font-path}/Geometria-Medium.otf");
+  src: url("#{$font-path}/Geometria-Medium.ttf");
 }
 
 $image_dir: "../img/";
 
 body {
-  //width: 1280px;
   background-size: cover;
-
   background: linear-gradient(to bottom, #001a34 0%, #000000);
 }
 
+a {
+  outline: none;
+}
+
 .l-app-content {
-  /* background: url('images/pattern-web-1.svg') 0 64px,
-    url('images/pattern-web-2.svg') 0 1436px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 100;
-
-  @media (min-width: $breakpoint-tablet) {
-    background: url('images/pattern-web-1.svg') 0 80px,
-      url('images/pattern-web-2.svg') 0 1494px,
-      url('images/pattern-web-3.svg') 0 2453px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  @media (min-width: $breakpoint-web) {
-    background: url('images/pattern-web-1.svg') 0 80px,
-      url('images/pattern-web-2.svg') 0 1494px,
-      url('images/pattern-web-3.svg') 0 2453px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  } */
 }
 
 .link-color {

@@ -14,6 +14,9 @@ const Header = ({ lang }) => (
           <div className="l-header__logo-wrapper display-flex _j-center">
             <SVGIcon name="topos" />
           </div>
+          <div className="l-header__subscription">
+            <span>PRODUCT CONSULTANCY AND DESIGN STUDIO</span>
+          </div>
         </Col>
       </Row>
 

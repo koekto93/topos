@@ -36,11 +36,16 @@
 
 .l-callback-form {
   position: relative;
-
-  &__close {
+  &__close-wrapper {
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 19px;
-    right: 19px;
+    right: 10px;
     cursor: pointer;
+  }
+  &__close {
+    height: 16px;
+    width: 16px;
   }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="108px" height="108px" viewBox="0 0 108 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="130px" height="130px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
     <title>Group 2</title>
     <desc>Created with Sketch.</desc>
@@ -8,10 +8,9 @@
             <g id="VP-3" transform="translate(-1.000000, 2233.000000)">
                 <g id="Logos" transform="translate(147.000000, 143.000000)">
                     <g id="Group-2" transform="translate(0.000000, 177.000000)">
-                        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="108" height="108"></rect>
-                        <text id="CARL" font-family="Helvetica" font-size="40" font-weight="normal" letter-spacing="0.3997928">
-                            <tspan x="11" y="79" fill="#000000">CAR</tspan>
-                            <tspan x="96.6525034" y="79" fill="#707070">L</tspan>
+                        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="130" height="130"></rect>
+                        <text id="CARL" font-family="FranklinGothic-DemiCond, Franklin Gothic Demi Cond" x="11" y="69" fill="#000000" font-size="40" font-style="condensed" font-weight="500" letter-spacing="0.3997928">
+                            CAR<tspan fill="#707070">L</tspan>
                         </text>
                     </g>
                 </g>
