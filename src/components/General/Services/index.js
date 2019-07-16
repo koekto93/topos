@@ -87,7 +87,13 @@ function getDoublePoints(items, setNewPoint, selectedPoint, lang) {
       </Row>
       <Row>
         <Col xs={9}>
-          <div className="l-double-points__description _mobile">
+          <div
+            className={`l-double-points__description _mobile ${
+              selectedPoint === items[0].id || selectedPoint === items[1].id
+                ? "_without-bottom-padding"
+                : ""
+            }`}
+          >
             <span>
               {selectedPoint === items[0].id || selectedPoint === items[1].id
                 ? allDescriptions[selectedPoint][lang]

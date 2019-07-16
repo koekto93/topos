@@ -1,4 +1,4 @@
-@import '../../../css/global.scss';
+@import "../../../css/global.scss";
 
 .l-services {
   &__points-wrapper {
@@ -147,10 +147,12 @@
 //стили для 2-го пункта сервисов
 .l-double-points {
   border-left: 2px dashed #825aa9;
-  min-height: 80px;
+  //min-height: 80px;
+  //padding-bottom: 20px;
 
   &__points-wrapper {
     position: relative;
+    padding-bottom: 20px;
   }
 
   & .row {
@@ -187,6 +189,14 @@
   &__description {
     @include font-general(11px, 1.55, 0.38px);
     margin: 10px 0px 12px 6px;
+
+    &._without-bottom-padding {
+      .l-double-points {
+        &__points-wrapper {
+          padding-bottom: 0 !important;
+        }
+      }
+    }
   }
 
   &__without-right-padding {
