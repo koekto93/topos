@@ -5,10 +5,10 @@
   //padding: 0;
   position: relative;
 
-  background: url("../images/pattern-web-1.svg") 0 64px,
-    url("../images/pattern-web-2.svg") 0 1436px;
+  background: url("../images/pattern-mobile-1.svg") 0 65px/ 112% 435px,
+    url("../images/pattern-web-2.svg") 0 878px/ 100% 385px;
   background-repeat: no-repeat;
-  background-size: contain;
+  //background-size: auto contain;
   //z-index: 100;
 
   @media (min-width: $breakpoint-tablet) {
@@ -16,7 +16,7 @@
       url("../images/pattern-web-2.svg") 0 1994px,
       url("../images/pattern-web-3.svg") 0 3000px;
     background-repeat: no-repeat;
-    background-size: contain;
+    //background-size: contain;
   }
 
   @media (min-width: $breakpoint-web) {
@@ -24,6 +24,6 @@
       url("../images/pattern-web-2.svg") 0 1994px,
       url("../images/pattern-web-3.svg") 0 3000px;
     background-repeat: no-repeat;
-    background-size: contain;
+    //background-size: contain;
   }
 }
