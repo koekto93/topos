@@ -1,20 +1,20 @@
-import React from 'react';
-import { compose } from 'redux';
-import { connect } from 'react-redux';
-import { Row, Col } from 'react-flexbox-grid';
+import React from "react";
+import { compose } from "redux";
+import { connect } from "react-redux";
+import { Row, Col } from "react-flexbox-grid";
 
-import Header from './Header';
-import Services from './Services';
-import Clients from './Clients';
-import Points from './Points';
-import Footer from './Footer';
-import LangButton from '../../_common/LangButton';
-import Callback from '../../_common/Dialogs/Callback';
-import Success from '../../_common/Dialogs/Success';
-import { getLang } from '../../selector/general';
-import withModal from '../../_decorators/withModal';
+import Header from "./Header";
+import Services from "./Services";
+import Clients from "./Clients";
+import Points from "./Points";
+import Footer from "./Footer";
+import LangButton from "../../_common/LangButton";
+import Callback from "../../_common/Dialogs/Callback";
+import Success from "../../_common/Dialogs/Success";
+import { getLang } from "../../selector/general";
+import withModal from "../../_decorators/withModal";
 
-import './style.scss';
+import "./style.scss";
 
 const General = ({ lang, onChangeSelectedModalName, selectedModalName }) => {
   return (
@@ -57,10 +57,10 @@ const General = ({ lang, onChangeSelectedModalName, selectedModalName }) => {
 };
 
 const mapStateToProps = state => ({
-  lang: getLang(state),
+  lang: getLang(state)
 });
 
 export default compose(
   connect(mapStateToProps),
-  withModal,
+  withModal
 )(General);

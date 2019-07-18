@@ -1,4 +1,4 @@
-@import '../../../css/global.scss';
+@import "../../../css/global.scss";
 
 .l-services {
   &__points-wrapper {
@@ -71,12 +71,12 @@
       margin-top: 60px;
     }
     &__category {
-      @include font-general(18px, 2.11, 0.46px);
+      @include font-general(17px, 2.11, 0.46px);
       align-items: center;
 
       &:hover,
       ._active {
-        @include font-bold(18px, 2.11, 0.46px);
+        @include font-bold(17px, 2.11, 0.46px);
       }
     }
 
@@ -86,7 +86,7 @@
       }
       &._big {
         display: block;
-        @include font-general(18px, 1.83, 0.63px);
+        @include font-general(17px, 1.83, 0.63px);
       }
     }
 
@@ -208,7 +208,7 @@
     }
 
     &__horizon-point {
-      width: 400px;
+      //width: 400px;
     }
 
     &__description {
@@ -236,7 +236,7 @@
     }
 
     &__horizon-point {
-      width: 400px;
+      //width: 400px;
     }
 
     &__description {

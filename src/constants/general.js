@@ -56,7 +56,7 @@ export const secondPartServices = [
       eng: "Visual design and design systems"
     },
     description: {
-      ru: "Помогаем вашему продукты быть запоминающимся и удобным для клиента.",
+      ru: "Помогаем вашему продукту быть запоминающимся и удобным для клиента.",
       eng: "Make your product stand out from others and be customer friendly."
     },
     class: "_dashed"
@@ -140,7 +140,7 @@ export const pointBlockText = [
   },
   {
     ru:
-      "За годы работы мы набрали опыт проектирования и графического оформления сложных систем, таких как: CRM, ERP, LMS и других корпоративных приложений. Что позволяет нам экономить время и ресурсы на их создание.",
+      "За годы работы мы набрали опыт проектирования и графического оформления сложных систем, таких как: CRM, ERP, LMS и других корпоративных приложений - что позволяет нам экономить время и ресурсы на их создание.",
     eng:
       "Over the years we gained a lot of experince planning, designing and emplementing complex systems like CRM, ERP, LMS and other enterprise level solutions with a fraction of time and resources to deliver ready to code solutions."
   },

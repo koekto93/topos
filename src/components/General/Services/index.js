@@ -138,7 +138,7 @@ const Services = ({ lang, onChangeSelectedModalName }) => {
               )}
             </div>
           </Col>
-          <Col xs={5} xsOffset={1}>
+          <Col md={5} xsOffset={1}>
             <div className="l-services__description _big">
               <span>
                 {selectedPoint ? allDescriptions[selectedPoint][lang] : ""}
@@ -153,7 +153,7 @@ const Services = ({ lang, onChangeSelectedModalName }) => {
               lang
             )}
           </Col>
-          <Col xs={12} md={6}>
+          <Col xs={12}>
             <div className="l-services__last-points-block">
               {getSimplePoints(
                 thirdPartServices,
